@@ -99,6 +99,6 @@ setUser(user: any) {
   }
 
   public logout(): Promise<void> {
-    return this.userManager.signoutRedirect({post_logout_redirect_uri: "https://react-demoapp.azurewebsites.net"});
+    return this.userManager.signoutRedirect({post_logout_redirect_uri: "http://react-demoapp.azurewebsites.net"});
   }
 }
