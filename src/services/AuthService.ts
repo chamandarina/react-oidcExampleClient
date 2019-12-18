@@ -1,15 +1,7 @@
-import { Log, User, UserManager, WebStorageStateStoreSettings, WebStorageStateStore   } from 'oidc-client';
+import { Log, User, UserManager } from 'oidc-client';
 
-import LocalWebStorageStore from '../userStore';
 import { Constants } from '../helpers/Constants';
 
-const myStore: LocalWebStorageStore = new LocalWebStorageStore();
-
-const webSettings: WebStorageStateStoreSettings = 
-{
-  prefix: "oidc.", 
-  store: myStore
-};
 
 export class AuthService {
   public userManager: UserManager;
